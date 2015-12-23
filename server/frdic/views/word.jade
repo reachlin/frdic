@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 New Word
+  div
+    form#wordForm(role="form", action="/word", method="POST")
+      div french 
+        input#french(type="text", name="french", required="true")
+      div frenchkey
+        input#frenchkey(type="text", name="frenchkey", required="true")
+      div english
+        input#english(type="text", name="english", required="true")
+      div type 
+        input#type(type="text", name="type", required="true")
+      div pronounce
+        input#pronounce(type="text", name="pronounce", required="true")
+      div detail
+        input#detail(type="text", name="detail")
+      div example
+        input#example(type="text", name="example")
+      div url
+        input#url(type="text", name="url")
+      div.text-center
+        input(type="submit")

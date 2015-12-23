@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= title
+  each item in words
+    p #{item.french} #{item.english}
+  a(href="/word") New
